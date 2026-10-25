@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff2f6">
+  <title>For Kal ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span>♡</span><span>✦</span><span>♡</span><span>✿</span><span>♡</span><span>✦</span>
+  </div>
+
+  <main>
+    <section class="page active" id="welcome">
+      <div class="tiny-label">A LITTLE SOMETHING FOR YOU</div>
+      <div class="hero-penguin" aria-hidden="true">🐧</div>
+      <div class="sticker sticker-left">made by Abel W.</div>
+      <div class="sticker sticker-right">for the birthday girl</div>
+      <h1>Hiii, Kal<span class="pink">!</span></h1>
+      <p class="intro">I made you a tiny corner of the internet.<br>It has penguins, questionable jokes, and a little bit of love.</p>
+      <button class="button primary" id="startBtn">Okay, show me ♡ <span>→</span></button>
+      <p class="micro">P.S. The penguin has been practicing this speech all day.</p>
+    </section>
+
+    <section class="page" id="vibe">
+      <div class="step">01 <span>·</span> VERY IMPORTANT QUESTION</div>
+      <div class="panel">
+        <div class="penguin-row"><span>🐧</span><span class="tiny-heart">♡</span></div>
+        <h2>How birthday-ish<br>are we feeling?</h2>
+        <p class="muted">Choose your current mood. The penguin council is listening.</p>
+        <div class="choice-grid">
+          <button class="mood" data-mood="soft"><span>🥹</span><b>Soft & sentimental</b><small>don't make me cry</small></button>
+          <button class="mood" data-mood="chaos"><span>😎</span><b>Chaos, obviously</b><small>no thoughts, just cake</small></button>
+          <button class="mood" data-mood="sparkle"><span>✨</span><b>Main character</b><small>as I am</small></button>
+        </div>
+        <p id="moodReply" class="reply" aria-live="polite">Tap one. It is scientifically important.</p>
+        <button class="button primary next" id="moodNext">Continue →</button>
+      </div>
+    </section>
+
+    <section class="page" id="memories">
+      <div class="step">02 <span>·</span> A SMALL REMINDER</div>
+      <h2>Things I hope you<br>never forget</h2>
+      <p class="muted">A few things the birthday penguin insists you know.</p>
+      <div class="memory-list">
+        <article class="memory"><span class="memory-icon">☀️</span><div><b>You make ordinary days better.</b><p>Your presence can turn a random moment into a memory.</p></div></article>
+        <article class="memory"><span class="memory-icon">🫶</span><div><b>You deserve the same love you give.</b><p>Not just on your birthday. On the quiet, normal days too.</p></div></article>
+        <article class="memory"><span class="memory-icon">🌷</span><div><b>You don't have to have it all figured out.</b><p>You're allowed to grow slowly, change your mind, and take your time.</p></div></article>
+      </div>
+      <div class="tiny-note">The penguin said this part. I'm just typing. 🐧</div>
+      <button class="button primary" id="memoryNext">Aww, okay… next ♡</button>
+    </section>
+
+    <section class="page" id="scrapbook">
+      <div class="step">03 <span>·</span> OUR LITTLE SCRAPBOOK</div>
+      <h2>Memories we keep<br>collecting 📸</h2>
+      <p class="muted">These are little placeholders for your favorite photos together.</p>
+      <div class="scrapbook">
+        <div class="polaroid tilt-left"><div class="photo photo-one"></div><span>the silly moments</span></div>
+        <div class="polaroid tilt-right"><div class="photo photo-two"></div><span>the good days</span></div>
+        <div class="polaroid tilt-left lower"><div class="photo photo-three"><img src="5.jpg"></div><span>more memories soon</span></div>
+      </div>
+      <p class="tiny-note">Replace the emoji squares with real photos when you're ready.</p>
+      <button class="button primary" id="letterNext">One last thing… 💌</button>
+    </section>
+
+    <section class="page" id="letter">
+      <div class="step">04 <span>·</span> OPEN WHEN READY</div>
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelopeBtn" aria-label="Open your birthday letter">
+          <span class="envelope-heart">♡</span>
+          <span class="envelope-hint">tap to open</span>
+        </button>
+      </div>
+      <h2>A letter for Kal</h2>
+      <p class="muted">No big speech. Just something I wanted you to hear.</p>
+      <article class="letter-card hidden" id="letterCard">
+        <p class="dear">Dear Kal, 💗</p>
+        <p>Happy birthday to one of my favorite humans. I hope this year is gentle with you, surprises you in the best ways, and gives you a hundred reasons to smile when you least expect it.</p>
+        <p>Thank you for being part of my life. For the laughs, the random conversations, the memories, and even the moments when we do absolutely nothing and somehow it's still fun. I'm glad I get to know you, cheer for you, and see you become more and more yourself.</p>
+        <p>I hope you never feel like you have to be perfect to be appreciated. You are allowed to have hard days, change your plans, take breaks, and start again. I hope you always have people around you who remind you that you're important — and I hope I can be one of those people.</p>
+        <p>Also, please remember that you are officially older now, which means you must become wiser. Unfortunately, the penguin council has reviewed your case and decided that this is unlikely. 😂🐧</p>
+        <p>Seriously though, I wish you happiness that feels real, peace that stays, and beautiful little moments that make life feel special. Keep being you, Kal. You're appreciated more than this tiny website can explain.</p>
+        <p class="sign">Happy birthday, Kal.<br>Your fav man ♡</p>
+      </article>
+      <div class="letter-actions">
+        <button class="button primary hidden" id="wishBtn">Make a birthday wish ✨</button>
+        <button class="button secondary" id="musicBtn">♫ Play her song</button>
+      </div>
+      <p id="musicStatus" class="micro">Add your song as <b>song.mp3</music></b> next to these files.</p>
+    </section>
+
+    <section class="page finale" id="finale">
+      <div class="confetti-icon">🎂</div>
+      <div class="tiny-label">THE OFFICIAL BIRTHDAY VERDICT</div>
+      <h1>Kal, you're<br><span class="pink">one of one.</span></h1>
+      <p class="intro">I hope today reminds you how loved, valued, and wonderfully you you are.</p>
+      <div class="final-card">
+        <span>🐧</span>
+        <p><b>Birthday mission complete.</b><br>Now go eat cake and let people celebrate you.</p>
+      </div>
+      <button class="button primary" id="againBtn">Relive the surprise ↻</button>
+      <p class="micro">Made for Kal, with love and a very dramatic penguin.</p>
+    </section>
+  </main>
+
+  <audio id="birthdaySong" src="song.m4a" preload="none" loop></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
